@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Game.module.css";
 import { dummyData } from "../dummy_data";
@@ -92,17 +92,6 @@ const Game = () => {
           Check answer
         </button>
       )}
-      {/* <button
-        className={styles.checkAnswer}
-        onClick={() => {
-          handleSetGoodWords(selectedWords);
-          handleEndGame();
-          handleCountDiff();
-          handleSetScore();
-        }}
-      >
-        Check answer
-      </button> */}
     </div>
   );
 };

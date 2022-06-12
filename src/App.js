@@ -12,9 +12,7 @@ function App() {
   const [isGameOver, setIsGameOver] = React.useState(false);
   const [score, setScore] = React.useState(0);
   const good = [];
-  const randomNumber = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  };
+
   return (
     <div className="App">
       <NickContext.Provider
@@ -23,7 +21,6 @@ function App() {
           setNick,
           selectedWords,
           setSelectedWords,
-          randomNumber,
           isGameOver,
           setIsGameOver,
           score,

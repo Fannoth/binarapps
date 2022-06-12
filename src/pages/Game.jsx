@@ -8,7 +8,6 @@ const Game = () => {
   const {
     selectedWords,
     setSelectedWords,
-    randomNumber,
     isGameOver,
     setIsGameOver,
     setScore,
@@ -17,6 +16,9 @@ const Game = () => {
   let diff = [];
 
   const memoizedData = React.useMemo(() => {
+    const randomNumber = (min, max) => {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    };
     return dummyData[randomNumber(0, 2)];
   }, []);
 

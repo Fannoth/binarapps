@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 14%;
+  margin: 0 auto;
+}
+
+.nicknameInput {
+  width: 100%;
+  height: 30px;
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.playButton {
+  height: 35px;
+  width: 100px;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
